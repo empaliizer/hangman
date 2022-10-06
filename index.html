@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Här kan du spela hänga gubben och utmana dins vänner."
+    />
+    <meta name="”robots”" content="”index”" />
+    <title>Hangman - Emelie Ek</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Välkommen till U03 - Emelies Hangman!</h1>
+    </header>
+    <main>
+      <section class="container">
+        <section class="wrapper">
+          <section class="info">
+            <h2>Utmana dina vänner i Hangman!</h2>
+            <p>
+              Nu har datorn slumpmässigt valt ut ett ord för dig att gissa på.
+              Det finns ett visst antal fält som motsvarar antalet bokstäver i
+              ordet. Ditt mål är att gissa ordet genom att trycka på
+              bokstavsknapparna. För varje bokstav du gissar rätt, så fylls
+              dyker det upp en bokstav i på den plats som bokstaven du gissade
+              på motsvarar i ordet. Du kan gissa fel max nio gånger. Lycka till!
+            </p>
+          </section>
+          <section class="gameboard">
+            <section class="hangman">
+              <img src="images/Start.png" alt="" />
+            </section>
+            <section class="board">
+              <section class="letter-box"></section>
+
+              <section class="game-buttons">
+                <button class="btn btn-char" data-char="a">A</button>
+                <button class="btn btn-char" data-char="b">B</button>
+                <button class="btn btn-char" data-char="c">C</button>
+                <button class="btn btn-char" data-char="d">D</button>
+                <button class="btn btn-char" data-char="e">E</button>
+                <button class="btn btn-char" data-char="f">F</button>
+                <button class="btn btn-char" data-char="g">G</button>
+                <button class="btn btn-char" data-char="h">H</button>
+                <button class="btn btn-char" data-char="i">I</button>
+                <button class="btn btn-char" data-char="j">J</button>
+                <button class="btn btn-char" data-char="k">K</button>
+                <button class="btn btn-char" data-char="l">L</button>
+                <button class="btn btn-char" data-char="m">M</button>
+                <button class="btn btn-char" data-char="n">N</button>
+                <button class="btn btn-char" data-char="o">O</button>
+                <button class="btn btn-char" data-char="p">P</button>
+                <button class="btn btn-char" data-char="q">Q</button>
+                <button class="btn btn-char" data-char="r">R</button>
+                <button class="btn btn-char" data-char="s">S</button>
+                <button class="btn btn-char" data-char="t">T</button>
+                <button class="btn btn-char" data-char="u">U</button>
+                <button class="btn btn-char" data-char="v">V</button>
+                <button class="btn btn-char" data-char="w">W</button>
+                <button class="btn btn-char" data-char="x">X</button>
+                <button class="btn btn-char" data-char="y">Y</button>
+                <button class="btn btn-char" data-char="z">Z</button>
+                <button class="btn btn-char" data-char="å">Å</button>
+                <button class="btn btn-char" data-char="ä">Ä</button>
+                <button class="btn btn-char" data-char="ö">Ö</button>
+                <p class="message"></p>
+                <button class="btn" id="btn-start-again">Spela igen</button>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer>
+      Hangman av Emelie Ek
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

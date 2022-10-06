@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 70%;
+}
+
+
+/* Header style */
+header {
+    background-color: #415A77;
+    height: 25vh;
+}
+
+/* Typogrophy */
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Main section */
+.container, header, footer {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.hangman {
+    width: 100%;
+}
+
+.gameboard {
+    display: flex;
+}
+
+button {
+    background-color: #778DA9;
+    width: 5vh;
+    height: 5vh;
+    border: none;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#btn-start-again {
+    display: none;
+}
+
+#btn-start-again.show {
+    display: block;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.uncompleted, .completed {
+    border: 1px #C4C4C3 solid;
+    height: 2.5rem;
+    width: 2.18rem;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.completed {
+    border: none;
+    font-size: 2.25rem;
+    text-align: center;
+    border-bottom: 1px green solid;
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-left: 18px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .info {
+        margin-bottom: 0px;
+    }
+
+    .gameboard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .uncompleted, .completed {
+        height: 1.5rem;
+        width: 1.18rem;
+        font-size: 1.25rem;
+        margin-right: 8px;
+        margin-bottom: 15px;
+    }
+
+    .hangman {
+        display: flex;
+        justify-content: center;
+    }
+
+    .board {
+        margin-top: 50px;
+    }
+
+    button {
+        margin-right: 19px;
+        margin-bottom: 20px;
+    }
+
+    #btn-start-again {
+        width: 50%;
+        font-size: 1.2rem;
+    }
+
+}
